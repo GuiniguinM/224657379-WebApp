@@ -161,25 +161,36 @@
 
     
     <figure>
-        <img src="htmlex/files/kaeya.jfif" alt="This is just a Demo">
-        <figcaption>This is just a Demo</figcaption>
+        <img src="htmlex/files/kaeya.jfif" alt="This is just a Demo"><br>
+        <input type="button" value="Know Me More" onclick="alert ('A Playable Character in Genshin Impact. He is one of the most respected people and is trusted by Jean, the Acting Grandmaster.')">
+        <figcaption>This is <abbr title="Calvary Captain"><cite>Kaeya Alberich</cite></abbr></figcaption>
     </figure>
     
     <audio src="htmlex/files/VO_Kaeya_Hello.mp3" autoplay="" preload="auto" controls=""></audio>
 
     <form>
         <h3>
-            <label for="name">Name:</label>
-            <input type="text" name="name" id="name">
+            <label for="name">Name:</label><br>
+            <input type="text"  name="name" id="name" placeholder="Name" required>
         </h3>
 
         <h3>
-            <label for="password">Password:</label>
-            <input type="password" name="password" id="password">
+            <label for="number">Number:</label><br>
+            <input type="text" name="number" placeholder="+63" required>
         </h3>
 
         <h3>
-            <label> Gender: </label>
+            <label for="email">Email:</label><br>
+            <input type="text" name="email" placeholder="Email" required>
+        </h3>
+
+        <h3>
+            <label for="password">Password:</label><br>
+            <input type="password" pattern="[a-z A-Z 0-9]" title="Only Letters and Numbers are Allowed." name="password" id="password" placeholder="Password" required>
+        </h3>
+
+        <h3>
+            <label aria-required="true"> Gender: </label><br>
             <input type="radio" value="male" id="male" name="gender">
             <label for="male">Male</label>
             <input type="radio" value="female" id="female" name="gender" >
@@ -187,7 +198,7 @@
         </h3>
 
         <h3>
-            <label for="termsandcond">Terms and Condition</label>
+            <label for="termsandcond" aria-required="true">Terms and Condition</label><br>
             <input type="checkbox" name="termsandcond" id="termsandcond">
         </h3>
 
@@ -216,7 +227,9 @@
     
     <video controls>
         <source src="htmlex/files/stageset.mp4" type="video/mp4"> 
-    </video>
+    </video> <br>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238.41898294489843!2d120.4499775695221!3d17.038196544519206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x338e1f05cee3009d%3A0x1ff9aba3bd40ee42!2sMantanas%2C%20Sta.%20Cruz%2C%20Ilocos%20Sur%20(Brgy%20Hall)!5e0!3m2!1sen!2sph!4v1707141360590!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     
     <footer>
         <h2>Here Ends The Page</h2>
