@@ -6,45 +6,48 @@
     <title>Document</title>
 </head>
 <body>
-    <abbr title="Riddle Roseheart">Character Obtained</abbr>
-    <address>
+    <abbr title="Riddle Roseheart">Character Obtained</abbr><br>
+    <br><address>
         Name: Riddle Roseheart
         Title: Housewarden
-        Dorm: Heartsyllabul
-    </address>
-    <b>RoseHeartSpell</b>
-    <bdo dir="rtl">foO htiW ruoY daeH</bdo>
-    <blockquote>If Only She Sees My Effort To Appease Her</blockquote>
-    <cite>Heartsyllabul</cite>
-    <p>This card is a <code>FIRE</code>type damage.</p>
-    <p>Color the roses <del>white</del> RED!</p>
-    <p><dfn>Rules</dfn> is what keeps you inline.</p>
-    <em>TEA TIME</em>
-    <p>I must let them <i>choose.</i></p>
-    <p>It's <del>her</del><ins>MY</ins> choice!</p>
-    <p>Press <kbd>Enter</kbd> to attack.</p>
-    <pre>Here in Heartsyllabul, I AM THE RULE! Don't Forget That.</pre>
-    <label for="data">Engaging Attack: </label><progress id="data" value="65" max="100">65%</progress>
-    <p>I use to tell myself, <q>If I do well, maybe mother will go easy on me.</q> Hah..what a wishful thinking...</p>
-    <p><s>Saving Throw</s> Character Down.</p>
-    <samp>Press Esc to retry...</samp>
-    <small>Character Revived. Level Restart.</small>
-    <strong>Beginning Batle</strong>
-    <p>Support Character Summoned, Buff Applied <sub>Attack Stat</sub></p>
-    <p>Character Damage Increase <sup>+589</sup></p>
-    <p>Character Ingaged An Attack.</p> 
-    <button onclick="showContent()">Show Attack Animation</button> 
-    <template>
+        Dorm: Heartslabyul
+    </address> <br>
+    <b>RoseHeartSpell</b> <br>
+    <bdo dir="rtl">foO htiW ruoY daeH</bdo> <br>
+    <blockquote>If Only She Sees My Effort To Appease Her</blockquote> <br>
+    <cite>Heartslabyul</cite> <br>
+    <p>This card is a <code>FIRE</code> type damage.</p> <br>
+    <p>Color the roses <del>white</del> RED!</p> <br>
+    <p><dfn>Rules</dfn> is what keeps you inline.</p> <br>
+    <em>TEA TIME</em> <br>
+    <p>I must let them <i>choose.</i></p> <br>
+    <p>It's <del>her</del><ins>MY</ins> choice!</p> <br>
+    <p>Press <kbd>Enter</kbd> to attack.</p> <br>
+    <pre>Here in Heartslabyul, I AM THE RULE! Don't Forget That.</pre> <br>
+    <label for="data">Engaging Attack: </label><progress>initiating</progress> <br>
+    <q>As long as you obey the rules of the Queen of Hearts, you're always welcome at Heartslabyul.</q> <br>
+    <p><s>Saving Throw</s> Character Down.</p> <br>
+    <samp>Press Esc to retry...</samp> <br>
+    <small>Character Revived. Level Restart.</small> <br>
+    <strong>Beginning Batle</strong> <br>
+    <p>Support Character Summoned, Buff Applied <sub>Attack Stat</sub></p> <br>
+    <p>Character Damage Increase <sup>+589</sup></p> <br>
+    <p>Character Ingaged An Attack.</p> <br>
+    <button onclick="showContent()">Show Attack Animation</button> <br>
+    <template id="myTemp">
         <img src="htmlex/files/riddle.GIF"  width="300" height="400">
     </template>
     <script>
         function showContent() { 
-            let temp = document.getElementsByTagName("template") [0];
-            let clon = tem.content.cloneNode(true);
-            document.body.appendChild(clon);
+            const template =document.getElementById('myTemp')
+            const clone = template.content.cloneNode(true);
+            document.body.appendChild(clone);
+
+            
+            delete window.showContent;
         }
-    </script>
-    <u>Succesful!</u>
-    <p>Computing total reward, <var>A</var> attack, <var>R</var> retries.</p>
+    </script> <br>
+    <u>Succesful!</u> <br>
+    <p>Computing damage dealt, <var>A</var> attack, <var>B</var> buff</p>
 </body>
 </html>
