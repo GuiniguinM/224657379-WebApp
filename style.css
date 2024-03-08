@@ -1,0 +1,20 @@
+header {
+    font-style: italic;
+    font-size: xx-large;
+    color: darkblue;
+    margin: auto;
+    padding: 1cap;
+}
+
+p {
+    font-size: medium;
+    color: aqua;
+    margin: auto;
+    padding: auto;
+}
+
+ul {
+    font-size: larger;
+    margin: auto;
+    padding: 1cap;
+}
