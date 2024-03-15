@@ -25,3 +25,9 @@ a {
     color: green;
     text-decoration: underline;
 }
+
+iframe {
+    width: 600px;
+    height: 400px;
+}
+
